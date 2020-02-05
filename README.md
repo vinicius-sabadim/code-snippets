@@ -18,6 +18,15 @@ Array(HOW_MANY_ELEMENTS)
   .map(() => {})
 ```
 
+- Format a number according to a language
+
+```javascript
+const number = 123456.789
+new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(
+  number
+)
+```
+
 ## React
 
 - Create a provider and use it as a hook
