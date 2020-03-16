@@ -27,6 +27,16 @@ new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(
 )
 ```
 
+- Check for a click in an element that contains a class (great for check clicks outside something)
+
+```javascript
+element.addEventListener('click', e => {
+  if (e.target.classList.contains(<className>)) {
+    // The clicked element will have the className
+  }
+})
+```
+
 ## React
 
 - Create a provider and use it as a hook
