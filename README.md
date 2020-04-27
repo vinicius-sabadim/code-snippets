@@ -66,3 +66,13 @@ function useAppState() {
 
 export { AppProvider, useAppState }
 ```
+
+- CSS-in-JS using media query
+
+```javascript
+const mq = window.matchMedia('(max-width: 600px)')
+
+if (mq.matches) {
+  // Do something
+}
+```
